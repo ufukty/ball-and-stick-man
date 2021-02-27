@@ -6,7 +6,7 @@ A homework for Computer Graphics class
 
 ## Features
 
--   Adjustible joints for arms, forearms and legs
+-   Adjustable joints for arms, forearms and legs
 -   Wave and walk in-place (with ease)
 -   Walk around
 -   Camera rotation and elevation (with auto-adjusting focus spot)
