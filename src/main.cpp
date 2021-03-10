@@ -11,7 +11,7 @@ CONTROLS
                            |
               Left arm     |     Right arm
                      |     |     |
-    Left forearm     |     |     |     Right forarm      Camera up
+    Left forearm     |     |     |     Right forearm     Camera up
                |     |     |     |     |                    |
             *-----*-----*-----*-----*-----*              *-----*
             |  Q  |  W  |  E  |  R  |  T  |              |  ▲  |
@@ -36,7 +36,17 @@ ANIMATIONS
 #include <iostream>
 #include <vector>
 #include <cmath>
+
+#ifdef __APPLE__
+#define GL_SILENCE_DEPRECATION
+#include <OpenGL/gl.h>
+#include <GLUT/glut.h>
+#elif _MSC_VER
 #include <glut.h>
+#else
+#include <GL/gl.h>
+#include <GL/glut.h>
+#endif
 
 /////////////////////////////////////////////////////////////////// SABİTLER
 
